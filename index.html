@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         It's Avnish side
     </title>
 
+    <!-- slideshow -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
@@ -31,7 +34,8 @@
 
     <nav class="navbar">
         <ul>
-            <li><a href="#home">about</a></li>
+            <li><a href="#home" aria-activedescendant="basic">about</a></li>
+            <li><a href="#experiences">Experiences</a></li>
             <li><a href="#about">Skills</a></li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#education">Education</a></li>
@@ -54,38 +58,74 @@
         <h1>I'M <span>Avnish Kumar</span></h1>
         <p>
             <ul>
-                <li>I am a pre-final year student, enrolled in B Tech Computer Science and Engineering at Indian Institute Of Technlogy Ropar (IIT-RPR).I love to learn new things.I like to devote time on problems,i am unable to solve.</li>
-                <li>I am exploring web development, learning  basic Data visualisations of data set in python and doing DSA problems on daily basis.</li>
+                <li>I am a final year student pursuing a B.Tech in Computer Science and Engineering at IIT Ropar. I have a deep passion for continuous learning and thrive on tackling challenging problems. </li>
+                <li>My enthusiasm is particularly evident in my dedicated approach to Data Structures and Algorithms (DSA), where I enjoy taking on complex problems and actively participate in coding contests to enhance my skills.</li>
             </ul>
         </p>
         <a href="#contact"><button class="btn">📨contact me</i></button></a>
 
-        <div class="exp">
-            <!--<a href="#"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>-->
-            <h3> <span>Experiences : </span></h3>
-            <div>
-                <h2>Databse Management System Team, <a href="https://navprayas.in/"><span>NavPrayas</span> </a>- NPO </h2>
-                <h2>Volunteer at <span>Hamari Pehchaan</span> - NGO</h2>
-            </div>
-        </div>
-    
-        <div class="counter">
-            <div class="box">
-                
-            </div>
-    
-            <div class="box">
-                
-            </div>
-    
-            <div class="box">
-                
-            </div>
-        </div>
+        
     
     </section>
     
     <!-- home section ends -->
+
+    <!-- Experiences start -->
+
+    <section class="Experiences" id="experiences">
+        <h1 class="heading"> My <span>Experiences </span></h1>
+
+        <!-- <div class="carousel"> -->
+    <div class="experience">
+      <div class="year">May 2023 - July 2023</div>
+      <div class="company-info">
+        <img src="images/ready_coder.jpg" alt="ReadyCoder Logo" class="company-logo">
+        <h2>ReadyCoder PVT. LTD.</h2>
+    </div>
+    <p><strong>Position:</strong> Application Developer Intern</p>
+      <ul>
+        <li>Brainstormed situations and use cases for helping startups.</li>
+        <li>Played a pivotal role in backend development using Node.js and Express.js.</li>
+        <li>Frontend development using React.js for the website.</li>
+        <li>Integrated MongoDB for seamless user experience.</li>
+        <li>Developed various RestApi functionalities.</li>
+        <li>Integrated OpenAI API for self-assistance on the portal.</li>
+      </ul>
+    </div>
+
+    <!-- <div class="experience">
+      <div class="year">June 2023 - July 2023</div>
+      <div class="company-info">
+        <img src="images/voltworks_logo.jpg" alt="VoltWorks Logo" class="company-logo">
+        <h2>VoltWorks Technology Limited</h2>
+    </div>
+    <p><strong>Position:</strong> SDE Intern</p>
+      <ul>
+        <li>Developed a real-time dashboard using React for electronic sensor data.</li>
+        <li>Implemented MQTT protocol over HTTP for data transmission.</li>
+        <li>Integrated backend in C++ for sensor data transmission through ESP32.</li>
+      </ul>
+    </div> -->
+
+    <div class="experience">
+      <div class="year">May 2021 - July 2021</div>
+      <div class="company-info">
+        <img src="images/navprayas.jpg" alt="Navprayas Logo" class="company-logo">
+        <h2>VoltWorks Technology Limited</h2>
+        
+    </div>
+    <p><strong>Position:</strong> Database Coordinator</p>
+      <ul>
+        <li>Contributed as a Database Coordinator for Navprayas, an NPO organization.</li>
+        <li>Maintained registrations and provided information to candidates through the website.</li>
+      </ul>
+    </div>
+
+
+
+    </section>
+
+    <!-- Experiences End -->
     
     <!-- about section starts  -->
     
@@ -195,7 +235,7 @@
             <div class="project">
                 <h2>Todo app</h2>
                 <div>
-                    <a href="https://avnis838.github.io/todo/">Demo</a>
+                    
                     <a href="https://github.com/avnis838/todo">Code</a>
                 </div>
                 
@@ -274,6 +314,150 @@
                     </div>
             </div>
         </div>
+
+        <div class="box1">
+            <div class="image">
+                <img src="images/ecom.png" alt="">
+            </div>
+            <div class="project">
+                <h2>E-Commerce</h2>
+                <div>
+                  
+                    <a href="https://lazy-blue-greyhound-vest.cyclic.app/">Demo</a>
+                    <a href="https://github.com/avnis838/Production-mern-ecommerce-app-2023"">Code</a>
+               
+                </div>
+                    <div class="prcontent">
+                        <h3>About</h3>
+                        <ul>
+                            <li>It is an E-commerce web application with search, filter , checkout and payment gateway.For both Admin and User.</li>
+                            <li>It is fully functional with user authentication, tech stack used is MERN and for payment gateway Braintree paypal is applied.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="image">
+                <img src="images/15_puzzle.png" alt="">
+            </div>
+            <div class="project">
+                <h2>15-puzzle Game</h2>
+                <div>
+                  
+                    <a href="https://lazy-blue-greyhound-vest.cyclic.app/">Demo</a>
+                    <a href="https://github.com/avnis838/Production-mern-ecommerce-app-2023"">Code</a>
+               
+                </div>
+                    <div class="prcontent">
+                        <h3>About</h3>
+                        <ul>
+                            <li>It is an Web version of 15-puzzle game using ReactJs</li>
+                            <li>It includes time countdown feature, attractive ui and on evry move you will get score in percentage how much you have solved the puzzle.</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="image">
+                <img src="images/Arrythmia.png" alt="">
+            </div>
+            <div class="project">
+                <h2>Arrythmia Detection</h2>
+                <div>
+                    <a href="https://github.com/avnis838/Arrythmia-Detection-using-1D-CNN">Code</a>
+                </div>
+                    <div class="prcontent">
+                        <h3>About</h3>
+                        <ul>
+                            <li>This project is a mini course project as assignment to explore the Arrythmia Detection with different model such as ANN and 1D CNN.</li>
+                            <li>Analysis Done with the help of Numpy, Pandas, MatPlotlib, Keras and the Data we used was on Kaggle</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="image">
+                <img src="images/pehchaan.png" alt="">
+            </div>
+            <div class="project">
+                <h2>Pehchaan</h2>
+                <div>
+                    
+                    <a href="https://sites.google.com/view/goyalpuneet/pehchaan-apps">Demo</a>
+                
+                </div>
+                    <div class="prcontent">
+                        <h3>About</h3>
+                        <ul>
+                            <li>This is further improvement and adding new features in the previous version of Pehchhan Apps.These are for maintaining the class schedule and teacher schedule for Pehchaan volunteer.</li>
+                            <li>Tech Stack - Flutter, SQL, Dart. !!Available on PlayStore</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="image">
+                <img src="images/live-dashboard-fullscreen.png" alt="">
+            </div>
+            <div class="project">
+                <h2>RealTime Dashboard</h2>
+                <div>
+                    <a href="">Demo</a>
+                    
+                </div>
+                    <div class="prcontent">
+                        <h3>About</h3>
+                        <ul>
+                            <li>This is a realtime problem solution for EV vehicles.It is dashboard with owner through which he can analyse the current temperature, speed, Current and voltage.</li>
+                            <li>Tech Stack - Reactjs, MQTT , C. HardWare - ESP32 microcontroller , Arduino</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="image">
+                <img src="images/startup.jpeg" alt="">
+            </div>
+            <div class="project">
+                <h2>Startup Planner</h2>
+                <div>
+                    <!-- <a href="https://avnis838.github.io/Vlog_site/">Demo</a> -->
+                    <a href="https://github.com/avnis838/Vlog_site">Code</a>
+                </div>
+                    <div class="prcontent">
+                        <h3>About</h3>
+                        <ul>
+                            <li>It is an web application for startup guidance to get mentored for starting up </li>
+                            <li>Tech Stack - MERN</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="image">
+                <img src="images/java_project.png" alt="">
+            </div>
+            <div class="project">
+                <h2>Academia Management</h2>
+                <div>
+                    
+                    <a href="https://github.com/avnis838/Academics-portal-system">Code</a>
+                </div>
+                    <div class="prcontent">
+                        <h3>About</h3>
+                        <ul>
+                            <li>It is a terminal based Java Project for Student, Admin and Faculty to communicate through all upcomming semester stuff. </li>
+                            <li>tech Stack - Java,JDBC connector,SQL</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
     
     </div>
     
@@ -343,11 +527,15 @@
     
         </div>
     
-        <form action="">
+        <form action="mailto:avnish01012002@gmail.com" method="post"  enctype="text/plain" onsubmit={sendHandler}>
     
+
+            
+ 
+
             <input type="text" placeholder="name" class="box">
             <input type="email" placeholder="email" class="box">
-            <input type="text" placeholder="project" class="box">
+            
             <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
             <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
     
@@ -364,7 +552,38 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script>
+    var nodemailer = require('nodemailer');
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'youremail@gmail.com',
+    pass: 'yourpassword'
+  }
+});
+
+var mailOptions = {
+  from: 'youremail@gmail.com',
+  to: 'myfriend@yahoo.com',
+  subject: 'SMail from Portfolio',
+  text: 'That was easy!'
+};
+
+function sendHandler(){
+    transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+}
+</script>
+
+
+    
+</script>
 
 
 </body>
